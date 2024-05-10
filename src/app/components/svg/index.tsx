@@ -1,7 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 
-const LoginIcon = props => (
+// LoginIcon 컴포넌트
+export const LoginIcon = props => (
   <svg
     width="28px"
     height="28px"
@@ -17,4 +18,85 @@ const LoginIcon = props => (
   </svg>
 );
 
-export default LoginIcon;
+// MenuIcon 컴포넌트
+export const MenuIcon = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width="28px"
+    height="28px"
+    viewBox="0 0 96 96"
+    xmlSpace="preserve"
+  >
+    <g fill="#030104">
+      <path d="M12,28h72c2.209,0,4-1.791,4-4s-1.791-4-4-4H12c-2.209,0-4,1.791-4,4S9.791,28,12,28z M84,44H12c-2.209,0-4,1.791-4,4s1.791,4,4,4h72c2.209,0,4-1.791,4-4S86.209,44,84,44z M84,68H12c-2.209,0-4,1.791-4,4s1.791,4,4,4h72c2.209,0,4-1.791,4-4S86.209,68,84,68z" />
+    </g>
+  </svg>
+);
+
+// EmailIcon 컴포넌트
+export const EmailIcon = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    id="Capa_1"
+    x="0px"
+    y="0px"
+    width="27px"
+    height="27px"
+    viewBox="0 0 612 612"
+    style={{ enableBackground: 'new 0 0 612 612' }}
+    xmlSpace="preserve"
+    {...props} // 이를 통해 외부에서 추가적인 props를 전달받을 수 있습니다.
+  >
+    <g>
+      <g id="_x37__2_">
+        <g>
+          <path d="M535.5,76.5h-459C34.253,76.5,0,110.753,0,153v306c0,42.247,34.253,76.5,76.5,76.5h459c42.247,0,76.5-34.253,76.5-76.5 V153C612,110.753,577.747,76.5,535.5,76.5z M554.625,114.75L306,306L57.375,114.75H554.625z M38.25,459V153l172.125,133.875 L40.067,470.055C38.996,466.535,38.25,462.883,38.25,459z M67.989,496.236L240.592,312.33L306,361.749l62.596-49.744 l175.415,184.212C541.257,496.849,70.743,496.849,67.989,496.236z M571.934,470.073L401.625,286.875L573.75,153v306 C573.75,462.883,573.004,466.535,571.934,470.073z" />
+        </g>
+      </g>
+    </g>
+  </svg>
+);
+
+// PasswordIcon 컴포넌트
+export const PasswordIcon = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    id="Capa_1"
+    x="0px"
+    y="0px"
+    width="27px"
+    height="27px"
+    viewBox="0 0 26 26"
+    style={{ enableBackground: 'new 0 0 26 26' }}
+    xmlSpace="preserve"
+    {...props} // 이를 통해 외부에서 추가적인 props를 전달받을 수 있습니다.
+  >
+    <g>
+      <path
+        d="M21.1 25H5C3.3 25 1.89999 23.6 1.89999 21.9V13C1.89999 11.3 3.3 9.90002 5 9.90002H21.1C22.8 9.90002 24.2 11.3 24.2 13V21.9C24.2 23.6 22.8 25 21.1 25Z"
+        stroke="#030104"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        fill="none"
+      />
+      <path
+        d="M16.6 9.79999H9.29999C8.69999 9.79999 8.10001 9.30001 8.10001 8.60001V5.5C8.10001 3 10.1 1 12.6 1H13.2C15.7 1 17.7 3 17.7 5.5V8.60001C17.8 9.30001 17.3 9.79999 16.6 9.79999Z"
+        stroke="#030104"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        fill="none"
+      />
+      <path
+        d="M13 21C12.1 21 11.4 20.3 11.4 19.4V15.4C11.4 14.5 12.1 13.8 13 13.8C13.9 13.8 14.6 14.5 14.6 15.4V19.4C14.6 20.3 13.9 21 13 21Z"
+        fill="#030104"
+      />
+    </g>
+  </svg>
+);

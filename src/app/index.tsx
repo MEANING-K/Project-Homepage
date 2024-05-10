@@ -18,6 +18,7 @@ import { useTranslation } from 'react-i18next';
 import { Board } from './pages/Board';
 import { Info } from './pages/Info';
 import { MyPage } from './pages/MyPage';
+import { Login } from './pages/Login';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -37,6 +38,7 @@ export function App() {
         <Route path="/board" element={<Board />} />
         <Route path="/info" element={<Info />} />
         <Route path="/mypage" element={<MyPage />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <GlobalStyle />
     </BrowserRouter>

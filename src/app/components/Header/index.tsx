@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import LoginIcon from '../svg';
+import { LoginIcon, MenuIcon } from '../svg';
 
 const Container = styled.div`
   display: flex;
@@ -18,14 +18,28 @@ const CategoryBox = styled.div`
   align-items: center;
 `;
 
-const LoginBox = styled.div`
+const LoginBox = styled.button`
   display: flex;
   background-color: blue;
+  border: none;
   color: white;
   height: 100px;
   padding: 1em;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+`;
+
+const BoardCategoryBox = styled.button`
+  display: flex;
+  background-color: green;
+  border: none;
+  color: white;
+  height: 100px;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 `;
 
 const Button = styled.button`
@@ -43,6 +57,9 @@ const Button = styled.button`
 export function Header() {
   return (
     <Container>
+      <BoardCategoryBox>
+        <MenuIcon />
+      </BoardCategoryBox>
       <CategoryBox>
         <Link to="/">
           <Button>Main</Button>
@@ -55,7 +72,9 @@ export function Header() {
         </Link>
       </CategoryBox>
       <LoginBox>
-        <LoginIcon />
+        <Link to="/login">
+          <LoginIcon />
+        </Link>
       </LoginBox>
     </Container>
   );
